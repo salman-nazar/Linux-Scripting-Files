@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo Enter IP-Address You Have To Configure:
+
 read IP
 
 echo
@@ -9,11 +11,10 @@ ping -c1 $IP
 if [ $? -ep 0 ]
 
 then 
-	echo $IP is Ok (Used By Network)
+	echo $IP is Ok
 else
-	echo $IP is Not Ok (Not Used By any Network)
+	echo $IP is Not Ok
 fi
 
-done
 
 
