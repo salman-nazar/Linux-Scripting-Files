@@ -8,13 +8,10 @@ echo
 
 ping -c1 $IP
 
-if [ $? -ep 0 ]
+if [ $? -eq 0 ]
 
 then 
 	echo $IP is Ok
 else
 	echo $IP is Not Ok
 fi
-
-
-
