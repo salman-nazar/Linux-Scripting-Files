@@ -1,0 +1,19 @@
+#!/bin/bash
+
+read IP
+
+echo
+
+ping -c1 $IP
+
+if [ $? -ep 0 ]
+
+then 
+	echo $IP is Ok (Used By Network)
+else
+	echo $IP is Not Ok (Not Used By any Network)
+fi
+
+done
+
+
